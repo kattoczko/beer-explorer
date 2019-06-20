@@ -1,0 +1,18 @@
+.beer-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: rem(1200px);
+  margin: 0 auto;
+}
+
+.everything-loaded {
+  text-align: center;
+  font-family: $display-font-family;
+  font-weight: $display-font-weight;
+  font-size: rem(20px);
+  padding: rem(40px);
+}
+
+.loader-placeholder {
+  min-height: rem(50px);
+}

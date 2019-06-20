@@ -1,0 +1,10 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: rem(50px);
+}
+
+.loader-invisible {
+  display: none;
+}

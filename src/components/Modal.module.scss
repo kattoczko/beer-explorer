@@ -1,0 +1,63 @@
+.modal {
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: $black;
+  opacity: 0.5;
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+  width: rem(700px);
+  max-width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  position: fixed;
+  z-index: 1010;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  overflow: auto;
+  padding: rem(30px);
+  padding-top: rem(20px);
+
+  @media screen and (min-width: $media-medium) {
+    & {
+      max-height: calc(100% - 60px);
+      min-height: auto;
+    }
+  }
+}
+
+.close-btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: rem(20px);
+}
+
+.close-btn {
+  font-size: rem(16px);
+  opacity: 0.6;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.modal-card {
+  width: 100%;
+  height: 100%;
+}

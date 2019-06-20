@@ -1,0 +1,56 @@
+@import "./common-styles/Card.module.scss";
+
+.similar-beers {
+  width: 100%;
+}
+
+.similar-beers-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $media-medium) {
+    & {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.similar-beers-item {
+  @extend %card-wrapper;
+  margin-top: rem(10px);
+  margin-bottom: rem(10px);
+}
+
+.similar-beers-item-card {
+  @extend %card;
+  margin-left: rem(10px);
+  margin-right: rem(10px);
+  padding: rem(10px);
+}
+
+.similar-beer-frame {
+  @extend %card-frame;
+  margin-left: rem(10px);
+  margin-right: rem(10px);
+}
+
+.similar-beers-item-name {
+  @extend %card-name;
+  font-size: rem(16px);
+  margin-top: rem(15px);
+}
+
+.similar-beers-item-image {
+  display: block;
+  max-width: 100%;
+  height: rem(150px);
+  margin: 0 auto;
+}
+
+.similar-beers-heading {
+  font-family: $display-font-family;
+  font-weight: $display-font-weight;
+  font-size: rem(18px);
+  margin-top: rem(50px);
+  margin-bottom: rem(20px);
+}

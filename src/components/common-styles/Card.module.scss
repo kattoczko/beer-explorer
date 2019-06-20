@@ -1,0 +1,58 @@
+
+%card-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: rem(20px);
+  margin-bottom: rem(20px);
+  text-align: center;
+  z-index: 1;
+
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+%card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: rem(20px);
+  margin-right: rem(20px);
+  padding: rem(30px);
+  background-color: $lighter-gray;
+  border: $border-width solid transparent;
+  height: 100%;
+  transition: transform 0.2s ease-in-out, border 0.2s ease-in-out;
+
+  &:hover {
+    transform: translate(-15px, -15px);
+    border-color: $dark-gray;
+  }
+}
+
+%card-frame {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: $border-width dashed $light-gray;
+  z-index: -1;
+  margin-left: rem(20px);
+  margin-right: rem(20px);
+}
+
+%card-name {
+  font-family: $display-font-family;
+  font-weight: $display-font-weight;
+  font-size: rem(20px);
+  margin-top: rem(30px);
+}
+
+%card-tagline {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: rem(5px);
+}

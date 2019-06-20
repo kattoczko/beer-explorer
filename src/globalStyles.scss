@@ -1,0 +1,21 @@
+@import "reset-css";
+
+// --- Box sizing fix
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+// -------------------
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  line-height: 1.4;
+}

@@ -1,0 +1,35 @@
+@import "./common-styles/Card.module.scss";
+
+.beer-item {
+  @extend %card-wrapper;
+  @media screen and (min-width: $media-medium) {
+    & {
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: $media-large) {
+    & {
+      width: 33.333%;
+    }
+  }
+}
+
+.beer-card {
+  @extend %card;
+}
+
+.beer-image {
+}
+
+.beer-frame {
+  @extend %card-frame;
+}
+
+.beer-name {
+  @extend %card-name;
+}
+
+.beer-tagline {
+  @extend %card-tagline;
+}

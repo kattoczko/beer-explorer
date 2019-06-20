@@ -1,0 +1,32 @@
+.app {
+  background-color: $white;
+
+  @media screen and (min-width: $media-medium) {
+    & {
+      margin: rem(20px);
+    }
+  }
+}
+
+.app-heading {
+  display: block;
+  max-width: rem($inner-width);
+  margin: 0 auto;
+  padding: 30px 20px 0 20px;
+  font-size: rem(45px);
+  font-family: $display-font-family;
+  font-weight: $display-font-weight;
+  line-height: 1.3;
+  @media screen and (min-width: $media-medium) {
+    & {
+      font-size: rem(55px);
+    }
+  }
+
+  @media screen and (min-width: $media-large) {
+    & {
+      font-size: rem(65px);
+      padding: 50px 20px;
+    }
+  }
+}
