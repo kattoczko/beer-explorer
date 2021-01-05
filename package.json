@@ -10,7 +10,7 @@
     "start:dev": "webpack-dev-server --port 3000 --open"
   },
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "babel-plugin-react-css-modules": "^5.2.5",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
